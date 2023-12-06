@@ -1,0 +1,35 @@
+server:
+    port: 8888
+encrypt:
+    key: ABCDEF  
+spring:
+    security:
+        user:
+            name: pluralsight
+            password: pluralsight
+   # cloud:
+ #     config:
+  #        server:
+  #           encrypt:
+   #                enabled: true
+  #           git:
+  #             uri: https://github.com/gangadhar99/pluralsight-spring-cloudconfig-wa-tolls
+  ##             search-paths:
+  #              - 'station*'
+  #             repos:
+  #                 perf:
+  #                    pattern: '*/perf'
+  #                    uri: https://github.com/gangadhar99/pluralsight-spring-cloudconfig-wa-tolll-pref 
+  #                    search-paths:
+  #                    - 'station*'
+    cloud:
+       config:
+          server:
+             encrypt:
+                   enabled: true
+             git:
+               uri: https://github.com/gangadhar99/Test
+               search-paths:
+                - 'test*'
+             
+              
